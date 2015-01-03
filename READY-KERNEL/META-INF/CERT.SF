@@ -1,0 +1,139 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest: aTLUaQ/otOsDRNyO3Gp5ykjidKw=
+Created-By: 1.0 (Android SignApk)
+
+Name: META-INF/com/google/android/updater-script
+SHA1-Digest: JEbgwE5+Re5hJDTkcVdHCi/eAFI=
+
+Name: system/lib/modules/ansi_cprng.ko
+SHA1-Digest: LvlzKnOGig+ZCtxN+gFZ9hkZkAw=
+
+Name: system/lib/modules/mcdrvmodule.ko
+SHA1-Digest: bPyBNMgAZCEthg1Ubo7AH7o36TQ=
+
+Name: system/lib/modules/tda18212.ko
+SHA1-Digest: sUdq80tVt5JDUWYT8jDf5FSkhRo=
+
+Name: system/lib/modules/dma_test.ko
+SHA1-Digest: L4w7An0fK/CSpYvUdLOnFCpQZV4=
+
+Name: system/lib/modules/mmc_test.ko
+SHA1-Digest: Y5qRuq7tBgcu8CdWkIlX1mprGuw=
+
+Name: system/lib/modules/xc5000.ko
+SHA1-Digest: fc52VoxLmehqXb6R+/plX3h4Tng=
+
+Name: system/lib/modules/gspca_main.ko
+SHA1-Digest: ptcTlwIs56k2XceXQGN9na6eW0g=
+
+Name: tmp/loki.sh
+SHA1-Digest: Bu4MSnBmZ/pRYYbV5hXq4b3nyAI=
+
+Name: system/lib/modules/scsi_wait_scan.ko
+SHA1-Digest: Fo2btWZ4oIAJwZuKM//0L2v0oT8=
+
+Name: system/lib/modules/rdbg.ko
+SHA1-Digest: jw1f6YGtVDTh420zsS5mrEZs1/o=
+
+Name: system/lib/modules/texfat.ko
+SHA1-Digest: im9pzjTF8PQFkHgJdONM+ztTVqw=
+
+Name: tmp/loki/loki_tool
+SHA1-Digest: 5WKcf5hCw6RxVCWMTex6Q9lXvwM=
+
+Name: system/lib/modules/coresight-event.ko
+SHA1-Digest: vgAf9E8JhrPMKJTJZW7VGLGilPg=
+
+Name: system/lib/modules/mt2131.ko
+SHA1-Digest: f+xxN8XadC379tRtW46yVnhxoNo=
+
+Name: system/lib/modules/tuner-xc2028.ko
+SHA1-Digest: vLSU5bbqUcpINsAZIcTXsMZbe0M=
+
+Name: system/lib/modules/spidev.ko
+SHA1-Digest: BDrzUs1pitMWF3EtSVf+JdaeUu4=
+
+Name: system/lib/modules/reset_modem.ko
+SHA1-Digest: MXc9tElWjGcfqh8mXKe4wQbId7E=
+
+Name: system/lib/modules/tda827x.ko
+SHA1-Digest: Gy8royc6S2bT/TC9YScIECFCfbE=
+
+Name: system/lib/modules/mt20xx.ko
+SHA1-Digest: kAhh2VDg4SEJAdZWYx13lLKQMwg=
+
+Name: system/lib/modules/tuner-types.ko
+SHA1-Digest: 7Pr3fnlmuSLo7evRAYe+DyPXgBo=
+
+Name: system/lib/modules/mckernelapi.ko
+SHA1-Digest: LsohU7gFOYJT9k1JE+poHwF/jqQ=
+
+Name: system/lib/modules/tda8290.ko
+SHA1-Digest: x4hkctmJJqkLBdnexjvkqOWVkfE=
+
+Name: system/lib/modules/qcrypto.ko
+SHA1-Digest: Ihshu7CHCTyrm4yw5ws2LosEi/0=
+
+Name: system/lib/modules/mxl5007t.ko
+SHA1-Digest: m+4jbgFqy2G214agEswDfpAH6U4=
+
+Name: system/lib/modules/tda9887.ko
+SHA1-Digest: +7Vn9ggIF62mVW34aKVJd6chPhA=
+
+Name: system/lib/modules/xc4000.ko
+SHA1-Digest: 0rQA7qxz+GkQ8SpZ1bqRAqVvS7s=
+
+Name: system/lib/modules/mt2060.ko
+SHA1-Digest: 6WhaO8qSW3qi5Wm6qYQzwl7+95I=
+
+Name: META-INF/com/google/android/update-binary
+SHA1-Digest: f5++SHlO2WV9XOOX03xOvWM13pA=
+
+Name: system/lib/modules/max2165.ko
+SHA1-Digest: ZYtR+LHEZcrNq6gMomEofDyqutc=
+
+Name: boot.img
+SHA1-Digest: DiN7qo6Yz6rMZHkqZSYv4G9ehyw=
+
+Name: system/lib/modules/radio-iris-transport.ko
+SHA1-Digest: g0X5tQtfIZmI/5e7byBIIDurvD4=
+
+Name: system/lib/modules/tuner-simple.ko
+SHA1-Digest: rutRTDtabm5k9+hB/+rXGPA/l4k=
+
+Name: system/lib/modules/tcp_westwood.ko
+SHA1-Digest: TLYHXf/ZMycniH+KTmNZ6x7eJc0=
+
+Name: system/lib/modules/msm-buspm-dev.ko
+SHA1-Digest: eWrQhl3X+cS71zZKEgZ4N+1yT9s=
+
+Name: system/lib/modules/tcp_htcp.ko
+SHA1-Digest: dNwVz2xKL+jBPdI+nlPHbQr38X4=
+
+Name: system/lib/modules/mc44s803.ko
+SHA1-Digest: 0T5jUxS5iQKz/2Ex16s906eEM2s=
+
+Name: system/lib/modules/mt2266.ko
+SHA1-Digest: s/PEvOq/L86pfv3Z7KT1tSapH2U=
+
+Name: system/lib/modules/tda18218.ko
+SHA1-Digest: THsHCQsSCLimPynkJ496Pz3BPV0=
+
+Name: system/lib/modules/tda18271.ko
+SHA1-Digest: ffCOJDJY/WHu1ZpxMddANcyem2E=
+
+Name: system/lib/modules/qt1010.ko
+SHA1-Digest: qUrd2q9tlviNTuHjC6myphGCHYA=
+
+Name: system/lib/modules/mt2063.ko
+SHA1-Digest: dnM2GfLcdqAYeqekSztU75EszkU=
+
+Name: system/lib/modules/tea5761.ko
+SHA1-Digest: dY1cvdK6bYBDDjEKcb9EDv54LHI=
+
+Name: system/lib/modules/mxl5005s.ko
+SHA1-Digest: pHzC4QZAgVea5eBKMLjqXvna9uI=
+
+Name: system/lib/modules/tea5767.ko
+SHA1-Digest: kNGUmRAz5U/8yKhyRVCNK9JQFf0=
+

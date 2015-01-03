@@ -1,0 +1,5 @@
+*** Compression CLI using LZ4 algorithm , by Yann Collet (Mar 14 2013) ***
+Using stdin for input
+Using stdout for output
+Read : 8 MB  Read : 8 MB  ==> 50.34%Read : 16 MB  Read : 16 MB  ==> 48.98%Read : 18 MB  Read : 18 MB  ==> 45.88%Compressed 18916028 bytes into 8678177 bytes ==> 45.88%
+Done in 0.81 s ==> 22.27 MB/s

@@ -1,0 +1,26 @@
+ui_print(" ");
+ui_print("---- Simon's kernel for LG L01F ----");
+ui_print("       Simon_Kernel_L01F_KK         ");
+ui_print("------------------------------------");
+ui_print(" ");
+
+ui_print("  Cleaning current kernel...");
+mount("ext4", "EMMC", "/dev/block/platform/msm_sdcc.1/by-name/system", "/system");
+delete_recursive("/system/lib/modules");
+
+ui_print("  Extracting modules...");
+package_extract_dir("system", "/system");
+set_perm_recursive(0, 0, 0755, 0644, "/system/lib/modules");
+
+ui_print("  Extracting kernel...");
+package_extract_dir("tmp", "/tmp");
+package_extract_file("boot.img", "/tmp/loki/boot.img");
+set_perm(0, 0, 0755, "/tmp/loki.sh");
+set_perm_recursive(0, 0, 0755, 0755, "/tmp/loki");
+assert(run_program("/tmp/loki.sh") == 0);
+delete("/tmp/loki.sh");
+unmount("/system");
+
+ui_print(" ");
+ui_print("-------------- Finished ------------");
+ui_print(" ");

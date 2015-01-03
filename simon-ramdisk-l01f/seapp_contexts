@@ -1,0 +1,22 @@
+isSystemServer=true domain=system
+user=system domain=system_app type=system_data_file
+user=bluetooth domain=bluetooth type=bluetooth_data_file
+user=nfc domain=nfc type=nfc_data_file
+user=radio domain=radio type=radio_data_file
+user=_app domain=untrusted_app type=app_data_file levelFrom=none
+user=_app seinfo=platform domain=platform_app type=platform_app_data_file
+user=_app seinfo=shared domain=shared_app type=platform_app_data_file
+user=_app seinfo=media domain=media_app type=platform_app_data_file
+user=_app seinfo=release domain=release_app type=platform_app_data_file
+user=_isolated domain=isolated_app
+user=shell domain=shell type=shell_data_file
+user=lg_fota domain=system_app type=system_data_file
+name=com.lge.allautotest domain=system_app type=system_data_file
+user=mfc domain=mfc type=felica_data_file
+user=mfm domain=mfm type=felica_data_file
+user=mfs domain=mfs type=felica_data_file
+user=mfw domain=mfw type=felica_data_file
+user=nfclock domain=nfclock type=felica_data_file
+user=stb name=com.digion.dixim.android.requestplayer.lge domain=system_app type=system_data_file
+user=stb name=com.digion.dixim.android.player.lge domain=system_app type=system_data_file
+user=stb name=com.digion.dixim.android.secureplayer.lge domain=system_app type=system_data_file
