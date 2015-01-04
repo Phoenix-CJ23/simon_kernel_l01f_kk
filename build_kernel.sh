@@ -40,13 +40,13 @@ CLEANUP()
 	rm -f "$KERNELDIR"/READY-KERNEL/*.img
 	mkdir -p "$KERNELDIR"/READY-KERNEL/boot
 
-	if [ -d ../ramdisk-tmp ]; then
-		rm -rf ../ramdisk-tmp/*
-	else
-		mkdir ../ramdisk-tmp
-		chown root:root ../ramdisk-tmp
-		chmod 777 ../ramdisk-tmp
-	fi;
+	#if [ -d ../ramdisk-tmp ]; then
+	#	rm -rf ../ramdisk-tmp/*
+	#else
+	#	mkdir ../ramdisk-tmp
+	#	chown root:root ../ramdisk-tmp
+	#	chmod 777 ../ramdisk-tmp
+	#fi;
 
 	# force regeneration of .dtb and zImage files for every compile
 	rm -f arch/arm/boot/*.dtb
@@ -67,10 +67,10 @@ CLEANUP;
 
 BUILD_NOW()
 {
-	if [ -e /usr/bin/python3 ]; then
-		rm /usr/bin/python
-		ln -s /usr/bin/python2 /usr/bin/python
-	fi;
+	#if [ -e /usr/bin/python3 ]; then
+	#	rm /usr/bin/python
+	#	ln -s /usr/bin/python2 /usr/bin/python
+	#fi;
 
 	# move into the kernel directory and compile the main image
 	echo "Compiling Kernel.............";
@@ -188,7 +188,7 @@ BUILD_NOW()
 	#fi;
 
 	# copy all ROOT ramdisk files to ramdisk temp dir.
-	cp -a ./simon-ramdisk-l01f/* ../ramdisk-tmp/
+	##cp -a ./simon-ramdisk-l01f/* ../ramdisk-tmp/
 
 	# copy needed branch files to ramdisk temp dir.
 	#if [ "$BUILD_800" == "1" ]; then
@@ -228,13 +228,13 @@ BUILD_NOW()
 		#../arm-eabi-4.7/bin/arm-eabi-strip --strip-debug ./READY-KERNEL/system/lib/modules/* 2>/dev/null
 
 		# create the ramdisk and move it to the output working directory
-		echo "Create ramdisk..............."
-		scripts/mkbootfs ../ramdisk-tmp | gzip > ramdisk.gz 2>/dev/null
-		mv ramdisk.gz READY-KERNEL/boot
+		#echo "Create ramdisk..............."
+		#scripts/mkbootfs ../ramdisk-tmp | gzip > ramdisk.gz 2>/dev/null
+		cp ramdisk.lz4 READY-KERNEL/boot
 
 		# create the dt.img from the compiled device files, necessary for msm8974 boot images
 		echo "Create dt.img................"
-		./scripts/dtbTool -v -s 2048 -o READY-KERNEL/boot/dt.img arch/arm/boot/
+		./scripts/dtbTool -v -s 2048 -o READY-KERNEL/boot/dt.img -p scripts/dtc/  arch/arm/boot/
 
 		#if [ -e /usr/bin/python3 ]; then
 		#	rm /usr/bin/python
@@ -252,7 +252,7 @@ BUILD_NOW()
 		offset=0x05000000
 		tags_addr=0x04800000
 		cmd_line="console=ttyHSL0,115200,n8 androidboot.hardware=g2 user_debug=31 msm_rtb.filter=0x0 mdss_mdp.panel=1:dsi:0:qcom,mdss_dsi_g2_lgd_cmd"
-		./mkbootimg --kernel zImage --ramdisk ramdisk.gz --cmdline "$cmd_line" --base $base --offset $offset --tags-addr $tags_addr --pagesize 2048 --dt dt.img -o newboot.img
+		./mkbootimg --kernel zImage --ramdisk ramdisk.lz4 --cmdline "$cmd_line" --base $base --offset $offset --tags-addr $tags_addr --pagesize 2048 --dt dt.img -o newboot.img
 		mv newboot.img ../boot.img
 
 		# cleanup all temporary working files
@@ -269,7 +269,7 @@ BUILD_NOW()
 
 		# create the flashable zip file from the contents of the output directory
 		echo "Make flashable zip..........."
-		zip -r Kernel-Simon-KK-"$(date +"%H-%M-%d-%m-LG-L01F-V1")".zip * >/dev/null
+		zip -r Kernel-Simon-KK-"$(date +"%H-%M-%d-%m-LG-L01F-V1.2")".zip * >/dev/null
 		stat boot.img
 		rm -f ./*.img
 		cd ..
